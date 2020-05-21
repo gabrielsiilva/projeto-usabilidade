@@ -16,7 +16,7 @@ function loginPage() {
                     <input type="text" name="" placeholder="Usuário ou Email" required />
 
                     <p>Senha</p>
-                    <input type="password" name="" placeholder="Insira sua Senha" required />
+                    <input type="password" name="" placeholder="Insira sua senha" required />
                     <input type="submit" name="" value="Entrar" />
                     <a href="#">Esqueceu sua senha?</a>
 

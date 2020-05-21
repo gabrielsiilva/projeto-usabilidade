@@ -51,7 +51,7 @@ h1 {
 
 .login input[type="text"], input[type="password"] {
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid #69A1D2;
     background: transparent;
     outline: none;
     height: 40px;
@@ -65,7 +65,7 @@ h1 {
     height: 35px;
     text-transform: uppercase;
     font-size: medium;
-    color: #FFF;
+    color: #FFFFFF;
     background: #69A1D2;
     border-radius: 20px;
     transition: 0.2s;
@@ -83,6 +83,7 @@ h1 {
     font-size: 13px;
     line-height: 20px;
     color: #F4F8F7;
+    margin-left: 25%;
     transition: 0.2s;
 }
 
