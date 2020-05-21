@@ -1,11 +1,10 @@
 import React from 'react';
+import './App.css';
 
 function App() {
     return (
-        <div>
-            <h1>
-                Porra
-            </h1>
+        <div class="title">
+            <h1>SISTEMA ACADÊMICO</h1>
         </div>
     );
 }
