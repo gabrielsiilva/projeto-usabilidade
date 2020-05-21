@@ -1,10 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
 
 // import { Container } from './styles';
 
-const loginPage = () => {
-    return <View />;
+function homePage() {
+  return <div />;
 }
 
-export default loginPage;
+export default homePage;
