@@ -1,14 +1,13 @@
 const data = [
     {
-        name: 'Afghanistan',
-        flag: '🇦🇫',
-        code: 'AF',
-        dial_code: '+93',
+        userName: 'lucasfragoso7',
+        email: 'andre.fragoso95@gmail.com',
+        password: 'fragosando123',
     },
     {
-        name: 'Åland Islands',
-        flag: '🇦🇽',
-        code: 'AX',
-        dial_code: '+358',
+        userName: 'thales-lindeberg',
+        email: 'thales.issoai@gmail.com',
+        password: 'admin1234',
     }
 ]
+export default data;
