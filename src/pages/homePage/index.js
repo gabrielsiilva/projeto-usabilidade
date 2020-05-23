@@ -12,16 +12,16 @@ function homePage() {
       <div class="menu-wrap">
         <input type="checkbox" class="toggler" />
         <div class="hamburger"><div></div></div>
-        
+
         <div class="menu">
           <div>
             <div>
               <ul>
-                <li><IoIosCalendar class="icon" /> <a href="#">PLANEJAMENTO DE AULAS</a></li>
-                <li><IoIosCreate class="icon" /> <a href="#">CRIAÇÃO E ENTREGA DE ATIVIDADES</a></li>
-                <li><IoIosChatbubbles class="icon" /> <a href="#">CHAT</a></li>
-                <li><IoIosBookmarks class="icon" /> <a href="#">TRABALHOS, PROVAS E ATIVIDADES</a></li>
-                <li><IoIosJournal class="icon" /> <a href="#"></a>MATERIAL DIDÁTICO</li>
+                <li><IoIosCalendar class="icon" /> <a href="/Planejamento">PLANEJAMENTO DE AULAS</a></li>
+                <li><IoIosCreate class="icon" /> <a href="/EntregaAtividade">CRIAÇÃO E ENTREGA DE ATIVIDADES</a></li>
+                <li><IoIosChatbubbles class="icon" /> <a href="/Chat">CHAT</a></li>
+                <li><IoIosBookmarks class="icon" /> <a href="/ListaAtividade">TRABALHOS, PROVAS E ATIVIDADES</a></li>
+                <li><IoIosJournal class="icon" /> <a href="/MaterialDidatico"></a>MATERIAL DIDÁTICO</li>
               </ul>
             </div>
           </div>
