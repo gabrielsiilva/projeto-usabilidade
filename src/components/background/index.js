@@ -1,9 +1,11 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { Wrapper } from './styles';
 
-function background() {
-  return <div />;
+function background({children}) {
+  return(
+  <Wrapper>{children}</Wrapper>
+  )
 }
 
 export default background;
