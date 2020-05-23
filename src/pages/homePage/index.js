@@ -1,13 +1,44 @@
 import React from 'react';
-
-// import { Container } from './styles';
+import { IoIosCalendar } from 'react-icons/io';
+import { IoIosCreate } from 'react-icons/io';
+import { IoIosChatbubbles } from 'react-icons/io';
+import { IoIosBookmarks } from 'react-icons/io';
+import { IoIosJournal } from 'react-icons/io';
+import './styles.css';
 
 function homePage() {
-  return <div >
-      <h1>
-          Home
-      </h1>
-  </div>;
+  return (
+    <body>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><IoIosCalendar class="icon" /> <a href="#">PLANEJAMENTO DE AULAS</a></li>
+                <li><IoIosCreate class="icon" /> <a href="#">CRIAÇÃO E ENTREGA DE ATIVIDADES</a></li>
+                <li><IoIosChatbubbles class="icon" /> <a href="#">CHAT</a></li>
+                <li><IoIosBookmarks class="icon" /> <a href="#">TRABALHOS, PROVAS E ATIVIDADES</a></li>
+                <li><IoIosJournal class="icon" /> <a href="#"></a>MATERIAL DIDÁTICO</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header class="showcase">
+        <div class="container showcase-inner">
+          <h1>PORTAL DO ALUNO</h1>
+        </div>
+        <img src="/images/profile2.png" class="profile-image" alt="" />
+        <div class="container showcase-outer">
+          <p>Bem-Vindo Thales</p>
+        </div>
+      </header>
+  </body>
+  );
 }
 
 export default homePage;

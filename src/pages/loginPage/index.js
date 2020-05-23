@@ -12,13 +12,11 @@ function loginPage() {
                 <form>
 
                     <p>Usuário</p>
-                    {/* <div class="icon"> <BsPeopleCircle size='25px' /></div> */}
                     <input type="text" name="" placeholder="Usuário ou Email" required />
-
                     <p>Senha</p>
                     <input type="password" name="" placeholder="Insira sua senha" required />
                     <input type="submit" name="" value="Entrar" />
-                    <a href="#">Esqueceu sua senha?</a>
+                    <a href="/Home">Esqueceu sua senha?</a>
 
                 </form>
             </div>
