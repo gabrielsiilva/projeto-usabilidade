@@ -3,7 +3,7 @@ import './styles.css';
 // import { BsPeopleCircle } from 'react-icons/bs';
 
 
-function loginPage() {
+function loginPage({ history }) {
     return (
         <body>
             <div class="login">
@@ -15,7 +15,7 @@ function loginPage() {
                     <input type="text" name="" placeholder="Usuário ou Email" required />
                     <p>Senha</p>
                     <input type="password" name="" placeholder="Insira sua senha" required />
-                    <input type="submit" name="" value="Entrar" />
+                    <input type="submit" name="" value="Entrar" onClick={() => history.push('/home')} />
                     <a href="/Home">Esqueceu sua senha?</a>
 
                 </form>
