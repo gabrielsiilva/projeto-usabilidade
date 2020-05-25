@@ -21,7 +21,7 @@ function homePage() {
                                 <li><IoIosCreate class="icon" /> <a href="/EntregaAtividade">CRIAÇÃO E ENTREGA DE ATIVIDADES</a></li>
                                 <li><IoIosChatbubbles class="icon" /> <a href="/Chat">CHAT</a></li>
                                 <li><IoIosBookmarks class="icon" /> <a href="/ListaAtividade">TRABALHOS, PROVAS E ATIVIDADES</a></li>
-                                <li><IoIosJournal class="icon" /> <a href="/MaterialDidatico"></a>MATERIAL DIDÁTICO</li>
+                                <li><IoIosJournal class="icon" /> <a href="/MaterialDidatico">MATERIAL DIDÁTICO</a></li>
                             </ul>
                         </div>
                     </div>
