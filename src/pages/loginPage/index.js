@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles.css';
-// import { BsPeopleCircle } from 'react-icons/bs';
 
 
 function loginPage({ history }) {

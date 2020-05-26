@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, ContainerTitle, ContainerTable, TextTitle, SecondTableSecondColumn, TableOne, TableTwo, FirstTableSecondColumn } from './styles';
+import { Container, ContainerTitle, ContainerTable, TextTitle, SecondTableSecondColumn, TableOne, TableTwo, FirstTableSecondColumn, Button } from './styles';
 
 
-function planejamentoPage() {
+function planejamentoPage(history) {
     return (
         <Container>
             <ContainerTitle>
@@ -54,7 +54,6 @@ function planejamentoPage() {
                     </tr>
                 </TableTwo>
             </ContainerTable>
-
 
         </Container>
     );
