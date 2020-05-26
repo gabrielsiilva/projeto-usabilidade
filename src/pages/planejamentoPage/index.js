@@ -1,63 +1,62 @@
 import React from 'react';
-import './styles.css';
+import { Container, ContainerTitle, ContainerTable, TextTitle, SecondTableSecondColumn, TableOne, TableTwo, FirstTableSecondColumn } from './styles';
 
-// import { Container } from './styles';
 
 function planejamentoPage() {
     return (
-        <body>
-            <div id="title">
-                <h1>PLANEJAMENTO DE AULAS</h1>
-            </div>
+        <Container>
+            <ContainerTitle>
+                <TextTitle>PLANEJAMENTO DE AULAS</TextTitle>
+            </ContainerTitle>
 
-            <div class="tables">
-                <table class="tableOne">
+            <ContainerTable>
+                <TableOne>
                     <tr>
                         <th>Professor(a)</th>
-                        <th id="first-table-second-column">Ricardo</th>
+                        <FirstTableSecondColumn>Ricardo</FirstTableSecondColumn>
                     </tr>
                     <tr>
                         <th>Matéria</th>
-                        <th id="first-table-second-column">Inglês II</th>
+                        <FirstTableSecondColumn>Inglês II</FirstTableSecondColumn>
                     </tr>
                     <tr>
                         <th>Tema</th>
-                        <th id="first-table-second-column"> Phrasal Verbs</th>
+                        <FirstTableSecondColumn> Phrasal Verbs</FirstTableSecondColumn>
                     </tr>
                     <tr>
                     </tr>
-                </table>
+                </TableOne>
 
-                <table class="tableTwo">
+                <TableTwo>
                     <tr>
                         <th>Conteúdo</th>
-                        <th id="second-table-second-column">Undefined</th>
+                        <SecondTableSecondColumn>Undefined</SecondTableSecondColumn>
                     </tr>
                     <tr>
                         <th>Metodologia</th>
-                        <th id="second-table-second-column">Undefined</th>
+                        <SecondTableSecondColumn>Undefined</SecondTableSecondColumn>
                     </tr>
                     <tr>
                         <th>Recursos didáticos</th>
-                        <th id="second-table-second-column">Undefined</th>
+                        <SecondTableSecondColumn>Undefined</SecondTableSecondColumn>
                     </tr>
                     <tr>
                         <th>Cronograma</th>
-                        <th id="second-table-second-column">Undefined</th>
+                        <SecondTableSecondColumn>Undefined</SecondTableSecondColumn>
                     </tr>
                     <tr>
                         <th>Avaliação</th>
-                        <th id="second-table-second-column">Undefined</th>
+                        <SecondTableSecondColumn>Undefined</SecondTableSecondColumn>
                     </tr>
                     <tr>
                         <th>Referências</th>
-                        <th id="second-table-second-column">Undefined</th>
+                        <SecondTableSecondColumn>Undefined</SecondTableSecondColumn>
                     </tr>
-                </table>
-            </div>
+                </TableTwo>
+            </ContainerTable>
 
 
-        </body>
+        </Container>
     );
 }
 
