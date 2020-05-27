@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, ContainerTitle, ContainerTable, TextTitle, SecondTableSecondColumn, TableOne, TableTwo, FirstTableSecondColumn, Button } from './styles';
+import { Container, ContainerTitle, ContainerTable, TextTitle, SecondTableSecondColumn, TableOne, TableTwo, FirstTableSecondColumn } from './styles';
 
 
 function planejamentoPage(history) {
@@ -30,27 +30,27 @@ function planejamentoPage(history) {
                 <TableTwo>
                     <tr>
                         <th>Conteúdo</th>
-                        <SecondTableSecondColumn>Undefined</SecondTableSecondColumn>
+                        <SecondTableSecondColumn>ss</SecondTableSecondColumn>
                     </tr>
                     <tr>
                         <th>Metodologia</th>
-                        <SecondTableSecondColumn>Undefined</SecondTableSecondColumn>
+                        <SecondTableSecondColumn>ssd</SecondTableSecondColumn>
                     </tr>
                     <tr>
                         <th>Recursos didáticos</th>
-                        <SecondTableSecondColumn>Undefined</SecondTableSecondColumn>
+                        <SecondTableSecondColumn>dasd</SecondTableSecondColumn>
                     </tr>
                     <tr>
                         <th>Cronograma</th>
-                        <SecondTableSecondColumn>Undefined</SecondTableSecondColumn>
+                        <SecondTableSecondColumn>dasdasd</SecondTableSecondColumn>
                     </tr>
                     <tr>
                         <th>Avaliação</th>
-                        <SecondTableSecondColumn>Undefined</SecondTableSecondColumn>
+                        <SecondTableSecondColumn>dasd</SecondTableSecondColumn>
                     </tr>
                     <tr>
                         <th>Referências</th>
-                        <SecondTableSecondColumn>Undefined</SecondTableSecondColumn>
+                        <SecondTableSecondColumn>dasdas</SecondTableSecondColumn>
                     </tr>
                 </TableTwo>
             </ContainerTable>

@@ -1,70 +1,70 @@
 import React from 'react';
-import './styles.css';
+import { Container, MainTitle, TextTitle, MainTable, TextSubtitle, DescricaoTable, PrazoTable, StatusTable, FirstColumnTableOne, FirstColumnTableTwo, FirstColumnTableThree, SecondColumnTableOne, SecondColumnTableTwo, SecondColumnTableThree, ThirdColumnTableOne, ThirdColumnTableTwo, ThirdColumnTableThree, NormalText } from './styles';
 
 // import { Container } from './styles';
 
 function entregaAtividadePage() {
     return (
-    <div class="container">
-        <div id="main-title">
-            <h1>CRIAÇÃO E ENTREGA DE ATIVIDADES</h1>
-        </div>
+    <Container>
+        <MainTitle>
+            <TextTitle>CRIAÇÃO E ENTREGA DE ATIVIDADES</TextTitle>
+        </MainTitle>
 
-        <div class="main-table">
-            <h2>Fevereiro - Atividade 03</h2>
-        </div>
+        <MainTable>
+            <TextSubtitle>Fevereiro - Atividade 03</TextSubtitle>
+        </MainTable>
 
-        <div class="descricao-table">
-            <h2>Descrição</h2>
-        </div>
+        <DescricaoTable>
+            <TextSubtitle>Descrição</TextSubtitle>
+        </DescricaoTable>
 
-        <div class="prazo-table">
-            <h2>Prazo</h2>
-        </div>
+        <PrazoTable>
+            <TextSubtitle>Prazo</TextSubtitle>
+        </PrazoTable>
 
-        <div class="status-table">
-            <h2>Status</h2>
-        </div>
+        <StatusTable>
+            <TextSubtitle>Status</TextSubtitle>
+        </StatusTable>
         
         {/* Primeira Coluna abaixo da Descrição */}
-        <div class="first-column-table-one">
-            <h3></h3>
-        </div>
+        <FirstColumnTableOne>
+            <NormalText></NormalText>
+        </FirstColumnTableOne>
 
-        <div class="first-column-table-two">
-            <h3></h3>
-        </div>
+        <FirstColumnTableTwo>
+            <NormalText></NormalText>
+        </FirstColumnTableTwo>
 
-        <div class="first-column-table-three">
-            <h3></h3>
-        </div>
+        <FirstColumnTableThree>
+            <NormalText></NormalText>
+        </FirstColumnTableThree>
 
         {/* Segunda Coluna abaixo do Prazo */}
-        <div class="second-column-table-one">
-            <h3></h3>
-        </div>
+        <SecondColumnTableOne>
+            <NormalText></NormalText>
+        </SecondColumnTableOne>
 
-        <div class="second-column-table-two">
-            <h3></h3>
-        </div>
+        <SecondColumnTableTwo>
+            <NormalText></NormalText>
+        </SecondColumnTableTwo>
 
-        <div class="second-column-table-three">
-            <h3></h3>
-        </div>
+        <SecondColumnTableThree>
+            <NormalText></NormalText>
+        </SecondColumnTableThree>
 
         {/* Terceira Coluna abaixo do Status */}
-        <div class="thid-column-table-one">
-            <h3></h3>
-        </div>
+        <ThirdColumnTableOne>
+            <NormalText></NormalText>
+        </ThirdColumnTableOne>
 
-        <div class="third-column-table-two">
-            <h3></h3>
-        </div>
+        <ThirdColumnTableTwo>
+            <NormalText></NormalText>
+        </ThirdColumnTableTwo>
 
-        <div class="third-column-table-three">
-            <h3></h3>
-        </div>
-    </div>
+        <ThirdColumnTableThree>
+            <NormalText></NormalText>
+        </ThirdColumnTableThree>
+    </Container>
     );
 }
 
