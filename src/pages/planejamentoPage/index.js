@@ -1,79 +1,79 @@
 import React from 'react';
-import './styles.css';
+import { Container, MainTitle, ProfessorFirstTable, TitleText, TextTableOne, ProfessorSecondTable, TextTableTwo, MateriaFirstTable, MateriaSecondTable, TemaFirstTable, TemaSecondTable, ConteudoFirstTable, ConteudoSecondTable, MetodologiaFirstTable, MetodologiaSecondTable, CronogramaFirstTable, CronogramaSecondTable, AvaliacaoFirstTable, AvaliacaoSecondTable, ReferenciaFirstTable, ReferenciaSecondTable } from './styles';
 
 
 function planejamentoPage() {
     return (
-       <body>
-           <div class="main-title">
-               <h1>PLANEJAMENTO DE AULAS</h1>
-           </div>
+       <Container>
+           <MainTitle>
+               <TitleText>PLANEJAMENTO DE AULAS</TitleText>
+           </MainTitle>
 
-           <div class="professor-first-table">
-               <h2>Professor(a)</h2>
-           </div>
+           <ProfessorFirstTable>
+               <TextTableOne>Professor(a)</TextTableOne>
+           </ProfessorFirstTable>
 
-           <div class="professor-second-table">
-               <h3>Daniel</h3>
-           </div>
+           <ProfessorSecondTable>
+               <TextTableTwo>Daniel</TextTableTwo>
+           </ProfessorSecondTable>
 
-           <div class="materia-first-table">
-               <h2>Matéria</h2>
-           </div>
+           <MateriaFirstTable>
+               <TextTableOne>Matéria</TextTableOne>
+           </MateriaFirstTable>
 
-           <div class="materia-second-table">
-               <h3>Inglês</h3>
-           </div>
+           <MateriaSecondTable>
+               <TextTableTwo>Inglês</TextTableTwo>
+           </MateriaSecondTable>
 
-           <div class="tema-first-table">
-               <h2>Tema</h2>
-           </div>
+           <TemaFirstTable>
+               <TextTableOne>Tema</TextTableOne>
+           </TemaFirstTable>
 
-           <div class="tema-second-table">
-               <h3>Voz passiva e If-clauses</h3>
-           </div>
+           <TemaSecondTable>
+               <TextTableTwo>Voz passiva e If-clauses</TextTableTwo>
+           </TemaSecondTable>
 
-           <div class="conteudo-first-table">
-               <h2>Conteúdo</h2>
-           </div>
+           <ConteudoFirstTable>
+               <TextTableOne>Conteúdo</TextTableOne>
+           </ConteudoFirstTable>
 
-           <div class="conteudo-second-table">
-               <h3>TODO</h3>
-           </div>
+           <ConteudoSecondTable>
+               <TextTableTwo>TODO</TextTableTwo>
+           </ConteudoSecondTable>
 
-           <div class="metodologia-first-table">
-               <h2>Metodologia</h2>
-           </div>
+           <MetodologiaFirstTable>
+               <TextTableOne>Metodologia</TextTableOne>
+           </MetodologiaFirstTable>
 
-           <div class="metodologia-second-table">
-               <h3>TODO</h3>
-           </div>
+           <MetodologiaSecondTable>
+               <TextTableTwo>TODO</TextTableTwo>
+           </MetodologiaSecondTable>
 
-           <div class="cronograma-first-table">
-               <h2>Cronograma</h2>
-           </div>
+           <CronogramaFirstTable>
+               <TextTableOne>Cronograma</TextTableOne>
+           </CronogramaFirstTable>
 
-           <div class="cronograma-second-table">
-               <h3>TODO</h3>
-           </div>
+           <CronogramaSecondTable>
+               <TextTableTwo>TODO</TextTableTwo>
+           </CronogramaSecondTable>
 
-           <div class="avaliacao-first-table">
-               <h2>Avaliação</h2>
-           </div>
+           <AvaliacaoFirstTable>
+               <TextTableOne>Avaliação</TextTableOne>
+           </AvaliacaoFirstTable>
 
-           <div class="avaliacao-second-table">
-               <h3>TODO</h3>
-           </div>
+           <AvaliacaoSecondTable>
+               <TextTableTwo>TODO</TextTableTwo>
+           </AvaliacaoSecondTable>
 
-           <div class="referencias-first-table">
-               <h2>Referências</h2>
-           </div>
+           <ReferenciaFirstTable>
+               <TextTableOne>Referência</TextTableOne>
+           </ReferenciaFirstTable>
 
-           <div class="referencias-second-table">
-               <h3>TODO</h3>
-           </div>
+           <ReferenciaSecondTable>
+               <TextTableTwo>TODO</TextTableTwo>
+           </ReferenciaSecondTable>
 
-       </body>
+       </Container>
     );
 }
 
