@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, MainTitle, TextTitle, MainTable, TextSubtitle, DescricaoTable, PrazoTable, StatusTable, FirstColumnTableOne, FirstColumnTableTwo, FirstColumnTableThree, SecondColumnTableOne, SecondColumnTableTwo, SecondColumnTableThree, ThirdColumnTableOne, ThirdColumnTableTwo, ThirdColumnTableThree, NormalText } from './styles';
+import { Container, MainTitle, TextTitle, MainTable, TextSubtitle, DescricaoTable, PrazoTable, StatusTable, FirstColumnTableOne, FirstColumnTableTwo, FirstColumnTableThree, SecondColumnTableOne, SecondColumnTableTwo, SecondColumnTableThree, ThirdColumnTableOne, ThirdColumnTableTwo, ThirdColumnTableThree, NormalText, ExitIcon } from './styles';
+import { IoIosExit } from 'react-icons/io';
 
 // import { Container } from './styles';
 
@@ -26,44 +27,50 @@ function entregaAtividadePage() {
             <TextSubtitle>Status</TextSubtitle>
         </StatusTable>
         
-        {/* Primeira Coluna abaixo da Descrição */}
+        {/* Coluna da Descrição */}
         <FirstColumnTableOne>
-            <NormalText></NormalText>
+            <NormalText>Resuma o texto lido em sala em inglês</NormalText>
         </FirstColumnTableOne>
 
         <FirstColumnTableTwo>
-            <NormalText></NormalText>
+            <NormalText>Identifique os Phrasal Verbs contidos no texto</NormalText>
         </FirstColumnTableTwo>
 
         <FirstColumnTableThree>
-            <NormalText></NormalText>
+            <NormalText>Aplique o uso do Past Perfect Continuous no seu dia-a-dia</NormalText>
         </FirstColumnTableThree>
 
-        {/* Segunda Coluna abaixo do Prazo */}
+        {/* Coluna do Prazo */}
         <SecondColumnTableOne>
-            <NormalText></NormalText>
+            <NormalText>10/02/2020</NormalText>
         </SecondColumnTableOne>
 
         <SecondColumnTableTwo>
-            <NormalText></NormalText>
+            <NormalText>11/02/2020</NormalText>
         </SecondColumnTableTwo>
 
         <SecondColumnTableThree>
-            <NormalText></NormalText>
+            <NormalText>15/02/2020</NormalText>
         </SecondColumnTableThree>
 
-        {/* Terceira Coluna abaixo do Status */}
+        {/* Coluna do Status */}
         <ThirdColumnTableOne>
-            <NormalText></NormalText>
+            <NormalText>CONCLUIDA</NormalText>
         </ThirdColumnTableOne>
 
         <ThirdColumnTableTwo>
-            <NormalText></NormalText>
+            <NormalText>EM ANDAMENTO</NormalText>
         </ThirdColumnTableTwo>
 
         <ThirdColumnTableThree>
-            <NormalText></NormalText>
+            <NormalText>NÃO INICIADA</NormalText>
         </ThirdColumnTableThree>
+        
+        <ExitIcon fontSize={50}>
+        <IoIosExit />
+        </ExitIcon>
+        
+        
     </Container>
     );
 }
