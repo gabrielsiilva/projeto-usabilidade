@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import { Container, MainTitle, TitleText, ChatBackground, ChatBox, FirstLightContainerChat, SecondLightContainerChat, BoldText, FirstDarkContainerChat, SecondDarkContainerChat, ContainerImg, TimeRight, Paragraph, RightContainer, UserStatus, ExitButton, TypeBox, InputText, SendButton } from './styles';
 import { FiSend } from "react-icons/fi";
 import { IoIosExit } from 'react-icons/io';
 
@@ -7,56 +7,58 @@ import { IoIosExit } from 'react-icons/io';
 
 function chatPage({ history }) {
     return (
-        <body>
-            <div class="main-title">
-                <h1>CHAT</h1>
-            </div>
+        <Container>
+            <MainTitle>
+                <TitleText>CHAT</TitleText>
+            </MainTitle>
 
-            <div class="chat-background" />
+            <ChatBackground />
 
-            <div class="chat-box">
+            <ChatBox>
 
-                <div class="container">
-                    <img src="/images/profile.png" alt="Avatar" />
-                    <p><b>Aluno:</b> Boa Noite! Gostaria de tirar uma dúvida.</p>
-                    <span class="time-right">22:00</span>
-                </div>
+            <FirstLightContainerChat>
+                <ContainerImg src="/images/profile.png" alt="Avatar" />
+                <Paragraph><BoldText>Aluno:</BoldText> Boa Noite! Gostaria de tirar uma dúvida.</Paragraph>
+                <TimeRight>22:00</TimeRight>
+            </FirstLightContainerChat>
 
-                <div class="container darker">
-                    <img src="/images/profile2.png" alt="Avatar" />
-                    <p><b>Professor:</b> Opa! Boa noite, Pedro. Em que posso te ajudar?</p>
-                    <span class="time-left">22:20</span>
-                </div>
+            <FirstDarkContainerChat>
+            <ContainerImg src="/images/profile2.png" alt="Avatar" />
+                <Paragraph><BoldText>Professor:</BoldText> Opa! Boa noite, Pedro. Em que posso te ajudar?</Paragraph>
+                <TimeRight>22:10</TimeRight>
+            </FirstDarkContainerChat>
 
-                <div class="container">
-                    <img src="/images/profile.png" alt="Avatar" />
-                    <p><b>Aluno:</b> Então, a questão 1 é para traduzir o texto inteiro e identificar apenas os phrasal verbs, certo?</p>
-                    <span class="time-right">22:23</span>
-                </div>
+            <SecondLightContainerChat>
+                <ContainerImg src="/images/profile.png" alt="Avatar" />
+                <Paragraph><BoldText>Aluno:</BoldText> Então, a questão 1 é para traduzir o texto inteiro e identificar apenas os phrasal verbs, certo?</Paragraph>
+                <TimeRight>22:12</TimeRight>
+            </SecondLightContainerChat>
 
-                <div class="container darker">
-                    <img src="/images/profile2.png" alt="Avatar" />
-                    <p><b>Professor:</b> Exatamente! Qualquer dúvida, é só falar comigo por aqui. Abraço!</p>
-                    <span class="time-left">22:25</span>
-                </div>
+            <SecondDarkContainerChat>
+                <ContainerImg src="/images/profile2.png" alt="Avatar" />
+                <Paragraph><BoldText>Professor:</BoldText> Exatamente! Qualquer dúvida, é só falar comigo por aqui. Abraço!</Paragraph>
+                <TimeRight>22:13</TimeRight>
+            </SecondDarkContainerChat>
 
-                <div class="right-container">
-                    <li><p>Aluno</p></li>
-                    <li><p>Professor</p></li>
-                </div>
+            <RightContainer>
+                <Paragraph><BoldText>Participantes:</BoldText></Paragraph>
+                <UserStatus><Paragraph>Aluno</Paragraph></UserStatus>
+                <UserStatus><Paragraph>Professor</Paragraph></UserStatus>
+            </RightContainer>
 
-                <button type="button" class="exit-button" onClick={() => history.push('/Home')} > <IoIosExit font-size={30} /> </button>
 
-            </div>
-
-            <div class="type-box" />
+            </ChatBox>
             
-            <input type="text" name="" class="input-text" placeholder="Escreva uma mensagem..." />
+            <ExitButton type="button" onClick={() => history.push('/Home')} > <IoIosExit font-size={30} /> </ExitButton>
 
-            <button type="button" class="send-button" onClick={() => { alert('Mensagem Enviada!'); }} > <FiSend font-size={30} /> </button>
+            <TypeBox />
+
+            <InputText type="text" name="" placeholder="Escreva uma mensagem..." />
+
+            <SendButton type="button" onClick={() => { alert('Mensagem Enviada!'); }} > <FiSend font-size={30} /> </SendButton>
 
 
-        </body>
+        </Container>
     );
 }
 
