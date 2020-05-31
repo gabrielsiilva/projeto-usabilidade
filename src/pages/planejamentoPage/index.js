@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, MainTitle, ProfessorFirstTable, TitleText, TextTableOne, ProfessorSecondTable, TextTableTwo, MateriaFirstTable, MateriaSecondTable, TemaFirstTable, TemaSecondTable, ConteudoFirstTable, ConteudoSecondTable, MetodologiaFirstTable, MetodologiaSecondTable, CronogramaFirstTable, CronogramaSecondTable, AvaliacaoFirstTable, AvaliacaoSecondTable, ReferenciaFirstTable, ReferenciaSecondTable } from './styles';
+import { Container, MainTitle, ProfessorFirstTable, TitleText, TextTableOne, ProfessorSecondTable, TextTableTwo, MateriaFirstTable, MateriaSecondTable, NivelFirstTable, NivelSecondTable, ConteudoFirstTable, ConteudoSecondTable, MetodologiaFirstTable, MetodologiaSecondTable, CronogramaFirstTable, CronogramaSecondTable, AvaliacaoFirstTable, AvaliacaoSecondTable, ReferenciaFirstTable, ReferenciaSecondTable, ExitIcon } from './styles';
+import { IoIosExit } from 'react-icons/io';
 
-
-function planejamentoPage() {
+function planejamentoPage({history}) {
     return (
        <Container>
            <MainTitle>
@@ -25,20 +25,20 @@ function planejamentoPage() {
                <TextTableTwo>Inglês</TextTableTwo>
            </MateriaSecondTable>
 
-           <TemaFirstTable>
-               <TextTableOne>Tema</TextTableOne>
-           </TemaFirstTable>
+           <NivelFirstTable>
+               <TextTableOne>Nivel</TextTableOne>
+           </NivelFirstTable>
 
-           <TemaSecondTable>
-               <TextTableTwo>Voz passiva e If-clauses</TextTableTwo>
-           </TemaSecondTable>
+           <NivelSecondTable>
+               <TextTableTwo>Básico e Intermediário</TextTableTwo>
+           </NivelSecondTable>
 
            <ConteudoFirstTable>
                <TextTableOne>Conteúdo</TextTableOne>
            </ConteudoFirstTable>
 
            <ConteudoSecondTable>
-               <TextTableTwo>TODO</TextTableTwo>
+               <TextTableTwo>Connectors, Pronouns, Verbs e If Clauses</TextTableTwo>
            </ConteudoSecondTable>
 
            <MetodologiaFirstTable>
@@ -46,7 +46,7 @@ function planejamentoPage() {
            </MetodologiaFirstTable>
 
            <MetodologiaSecondTable>
-               <TextTableTwo>TODO</TextTableTwo>
+               <TextTableTwo>Tradicional e Instrumental</TextTableTwo>
            </MetodologiaSecondTable>
 
            <CronogramaFirstTable>
@@ -54,7 +54,7 @@ function planejamentoPage() {
            </CronogramaFirstTable>
 
            <CronogramaSecondTable>
-               <TextTableTwo>TODO</TextTableTwo>
+               <TextTableTwo>Seg: Reading, Qui: Listening e Speaking</TextTableTwo>
            </CronogramaSecondTable>
 
            <AvaliacaoFirstTable>
@@ -62,7 +62,7 @@ function planejamentoPage() {
            </AvaliacaoFirstTable>
 
            <AvaliacaoSecondTable>
-               <TextTableTwo>TODO</TextTableTwo>
+               <TextTableTwo>Unid 1: 15 de Março, Unid 2: 17 de Junho</TextTableTwo>
            </AvaliacaoSecondTable>
 
            <ReferenciaFirstTable>
@@ -70,8 +70,12 @@ function planejamentoPage() {
            </ReferenciaFirstTable>
 
            <ReferenciaSecondTable>
-               <TextTableTwo>TODO</TextTableTwo>
+               <TextTableTwo>English as a Global Language by McArthur</TextTableTwo>
            </ReferenciaSecondTable>
+
+           <ExitIcon fontSize={50}>
+        <IoIosExit onClick={() => history.push('/home')} ></IoIosExit>
+        </ExitIcon>
 
        </Container>
     );

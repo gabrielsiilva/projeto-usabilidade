@@ -4,7 +4,7 @@ import { IoIosExit } from 'react-icons/io';
 
 // import { Container } from './styles';
 
-function entregaAtividadePage() {
+function entregaAtividadePage({history}) {
     return (
     <Container>
         <MainTitle>
@@ -67,7 +67,7 @@ function entregaAtividadePage() {
         </ThirdColumnTableThree>
         
         <ExitIcon fontSize={50}>
-        <IoIosExit />
+        <IoIosExit onClick={() => history.push('/home')} ></IoIosExit>
         </ExitIcon>
         
         

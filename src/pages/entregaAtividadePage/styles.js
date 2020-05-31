@@ -23,7 +23,7 @@ export const MainTable = styled.div`
     height: 10px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(0,0,5,0.8);
+    background-color: #69A1D2;
     top: 30%;
     left: 50%;
     position: absolute;
@@ -44,7 +44,7 @@ export const DescricaoTable = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(44, 130, 201, 1);
+    background-color: rgba(0,0,5,0.7);
     top: 40%;
     left: 29%;
     position: absolute;
@@ -59,7 +59,7 @@ export const PrazoTable = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(44, 130, 201, 1);
+    background-color: rgba(0,0,5,0.7);
     top: 40%;
     left: 50%;
     position: absolute;
@@ -74,7 +74,7 @@ export const StatusTable = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(44, 130, 201, 1);
+    background-color: rgba(0,0,5,0.7);
     top: 40%;
     left: 71%;
     position: absolute;
@@ -89,7 +89,7 @@ export const FirstColumnTableOne = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(0,0,5,0.8);
+    background-color: #69A1D2;
     top: 50%;
     left: 29%;
     position: absolute;
@@ -103,7 +103,7 @@ export const FirstColumnTableTwo = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(0,0,5,0.8);
+    background-color: #69A1D2;
     top: 60%;
     left: 29%;
     position: absolute;
@@ -117,7 +117,7 @@ export const FirstColumnTableThree = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(0,0,5,0.8);
+    background-color: #69A1D2;
     top: 70%;
     left: 29%;
     position: absolute;
@@ -132,7 +132,7 @@ export const SecondColumnTableOne = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(0,0,5,0.8);
+    background-color: #69A1D2;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -146,7 +146,7 @@ export const SecondColumnTableTwo = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(0,0,5,0.8);
+    background-color: #69A1D2;
     top: 60%;
     left: 50%;
     position: absolute;
@@ -160,7 +160,7 @@ export const SecondColumnTableThree = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(0,0,5,0.8);
+    background-color: #69A1D2;
     top: 70%;
     left: 50%;
     position: absolute;
@@ -175,7 +175,9 @@ export const ThirdColumnTableOne = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(111,199,139);
+    background-color: #69A1D2;
+    opacity: 60%;
+    transition: 0.2s;
     top: 50%;
     left: 71%;
     position: absolute;
@@ -183,6 +185,12 @@ export const ThirdColumnTableOne = styled.div`
     padding: 35px;
     text-align: center;
     font-family: bold;
+
+    &:hover {
+        cursor: pointer;
+        background: rgba(111,199, 139);
+        transition: 0.5s all ease-out;
+    }
 `;
 
 export const ThirdColumnTableTwo = styled.div`
@@ -190,7 +198,8 @@ export const ThirdColumnTableTwo = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(250, 216, 89, 1);
+    background-color: #69A1D2;
+    opacity: 60%;
     top: 60%;
     left: 71%;
     position: absolute;
@@ -198,6 +207,12 @@ export const ThirdColumnTableTwo = styled.div`
     padding: 35px;
     text-align: center;
     font-family: bold;
+
+    &:hover {
+        cursor: pointer;
+        background: rgba(250, 216, 89, 1);
+        transition: 0.5s all ease-out;
+    }
 `;
 
 export const ThirdColumnTableThree = styled.div`
@@ -205,7 +220,8 @@ export const ThirdColumnTableThree = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(214, 69, 65, 1);
+    background-color: #69A1D2;
+    opacity: 60%;
     top: 70%;
     left: 71%;
     position: absolute;
@@ -213,6 +229,12 @@ export const ThirdColumnTableThree = styled.div`
     padding: 35px;
     text-align: center;
     font-family: bold;
+
+    &:hover {
+        cursor: pointer;
+        background: rgba(214, 69, 65, 1);
+        transition: 0.5s all ease-out;
+    }
 `;
 
 export const NormalText = styled.h3`
@@ -225,6 +247,16 @@ export const NormalText = styled.h3`
 /* ICONS */
 export const ExitIcon = styled.div`
     font-size: ${props => `${props.fontSize}px`};
-    
+    margin-left: 93%;
+    margin-top: -150px;
+    padding: 10px 20px;
+    width: -10%;
+    /* color: white; */
+
+    &:hover {
+        cursor: pointer;
+        color: rgba(214, 69, 65, 1);
+        transition: 0.5s all ease-out;
+    }
     
 `;

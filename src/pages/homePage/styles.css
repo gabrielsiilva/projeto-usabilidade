@@ -50,6 +50,7 @@
 
   .showcase p {
     font-size: 1.7rem;
+    margin-left: -10px;
   }
 
   /* IMAGES */
@@ -63,7 +64,7 @@
     position: absolute;
     transform: translate(-50%, -50%);
     top: 73%;
-    left: 50%;
+    left: 49%;
   }
 
   /* ICONS */
@@ -99,6 +100,7 @@
     height: 60px;
     padding: 1rem;
     background: var(--primary-color);
+    opacity: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,7 +182,7 @@
   }
   
   .menu-wrap .menu > div {
-    background: var(--overlay-color);
+    background: #69A1D2;
     border-radius: 50%;
     width: 200vw;
     height: 200vw;
