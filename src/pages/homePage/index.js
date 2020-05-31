@@ -4,10 +4,11 @@ import { IoIosCreate } from 'react-icons/io';
 import { IoIosChatbubbles } from 'react-icons/io';
 import { IoIosBookmarks } from 'react-icons/io';
 import { IoIosJournal } from 'react-icons/io';
+import { IoIosExit } from 'react-icons/io';
 
 import './styles.css';
 
-function homePage() {
+function homePage({history}) {
     return (
         <body>
             <div class="menu-wrap">
@@ -37,6 +38,10 @@ function homePage() {
                 <div class="container showcase-outer">
                     <p>Bem-Vindo Thales</p>
                 </div>
+
+                <button>
+                <IoIosExit class="exit-icon" onClick={() => history.push('')} />
+                </button>
             </header>
         </body>
     );

@@ -215,5 +215,23 @@
     transition: color 0.4s ease;
   }
   
-  
+  .exit-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: #fff;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
   
