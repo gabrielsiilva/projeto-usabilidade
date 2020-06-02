@@ -3,12 +3,13 @@ body {
     padding: 0;
     /* background-size: cover; */
     font-family: 'Roboto', sans-serif;
+    background-color: rgba(228, 241, 254, 1);
 }
 
 .login {
     width: 350px;
     height: 410px;
-    border: 2px solid #F4F8F7;
+    border: 2px solid #69A1D2;
     border-radius: 50px 50px 50px 50px;
     color: #FFFFFF;
     background-color: rgba(0,0,5,0.8);

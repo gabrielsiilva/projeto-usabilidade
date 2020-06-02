@@ -2,17 +2,19 @@ import styled from 'styled-components';
 
 export const Container = styled.body`
   font-family: 'Roboto', sans-serif; 
+  margin: 15px;
 `;
 
 export const MainTitle = styled.div`
     margin: 10px;
     padding: 10px;
+    color: #2b2b2b;
 `;
 
 export const TitleText = styled.h1`
     margin-top: 80px;
     border: 2px outset transparent;
-    height: 50px;
+    height: 70px;
     border-left: #fff;
     border-right: #fff;
     border-bottom-color: #c4c4c4;
@@ -21,7 +23,8 @@ export const TitleText = styled.h1`
 export const ChatBackground = styled.div`
     width: 1450px;
     height: 625px;
-    background-color: #c4c4c4;
+    background-color: rgb(46, 49, 49);
+    border-radius: 10px 10px 10px 10px;
     bottom: -39%;
     left: 50%;
     position: absolute;
@@ -119,30 +122,12 @@ export const RightContainer = styled.div`
     border-bottom-color: #f5f5f5;
     background-color: #f5f5f5;
     margin-left: 1161px;
-    margin-top: -378px;
+    margin-top: -380px;
     padding: 1px 15px;
 `;
 
 export const UserStatus = styled.li`
     color: rgba(111,199, 139); 
-`;
-
-export const ExitButton = styled.button`
-    border: none;
-    color: white;
-    position: absolute;
-    padding: 15px 53.4px;
-    border-radius: 0px 0px 20px 0px;
-    font-size: 1em;
-    cursor: pointer;
-    margin-left: 1233px;
-    top: 577px;
-    background-color: rgba(214, 69, 65, 1);
-
-    &:hover {
-        background-color: #ff0000;
-        transition: 0.5s all ease-out;
-    }
 `;
 
 export const TypeBox = styled.div`
@@ -170,21 +155,55 @@ export const InputText = styled.input`
     font-size: 1em;
 `;
 
-export const SendButton = styled.button`
+export const ExitButton = styled.button`
     border: none;
-    color: white;
-    padding: 34px 43px;
-    border-radius: 0px 20px 20px 0px;
     position: absolute;
-    font-size: 1em;
+    top: 0;
+    right: 0;
+    margin-right: 70px;
+    margin-top: 580px;
+    width: 10%;
+    height: 10%;
     cursor: pointer;
-    transform: translate(-50%, -50%); 
-    margin-left: 1212px;
-    margin-top: 547px;
-    background-color: rgba(111,199, 139);
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: rgba(214, 69, 65, 1);
+    font-size: ${props => `${props.fontSize}px`};
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 20px 0px;
 
     &:hover {
-        background-color: #00cc00;
+        background-color: rgb(236, 100, 75);
+        transition: 0.3s all ease-out;
+    }
+`;
+
+export const SendButton = styled.button`
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 7.9%;
+    margin-top: 716px;
+    width: 112px;
+    cursor: pointer;
+    height: 100px;
+    padding: 1rem;
+    background: rgba(111,199, 139);
+    font-size: ${props => `${props.fontSize}px`};
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 20px 20px 0px;
+    transform: translate(-50%, -50%); 
+
+    &:hover {
+        background-color: rgb(135, 211, 124);
         transition: 0.3s all ease-out;
     }
 `;

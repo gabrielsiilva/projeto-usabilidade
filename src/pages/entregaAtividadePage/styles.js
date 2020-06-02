@@ -2,17 +2,19 @@ import styled from 'styled-components';
 
 export const Container = styled.body`
     font-family: 'Roboto', sans-serif;
+    margin: 15px;
 `;
 
 export const MainTitle = styled.div`
     margin: 10px;
     padding: 10px;
+    color: #2b2b2b;
 `;
 
 export const TextTitle = styled.h1`
     margin-top: 80px;
-    border: 2px outset #FFF;
-    height: 50px;
+    border: 2px outset transparent;
+    height: 70px;
     border-left: #FFF;
     border-right: #FFF;
     border-bottom-color: #C4C4C4;
@@ -23,7 +25,8 @@ export const MainTable = styled.div`
     height: 10px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: #69A1D2;
+    background-color: rgba(0,0,5,0.7);
+    border: 2px solid #c4c4c4;
     top: 30%;
     left: 50%;
     position: absolute;
@@ -44,7 +47,8 @@ export const DescricaoTable = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(0,0,5,0.7);
+    background-color: rgb(44, 110, 201);
+    border: 2px solid #c4c4c4;
     top: 40%;
     left: 29%;
     position: absolute;
@@ -59,7 +63,8 @@ export const PrazoTable = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(0,0,5,0.7);
+    background-color: rgb(44, 110, 201);
+    border: 2px solid #c4c4c4;
     top: 40%;
     left: 50%;
     position: absolute;
@@ -74,7 +79,8 @@ export const StatusTable = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(0,0,5,0.7);
+    background-color: rgb(44, 110, 201);
+    border: 2px solid #c4c4c4;
     top: 40%;
     left: 71%;
     position: absolute;
@@ -89,7 +95,8 @@ export const FirstColumnTableOne = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: #69A1D2;
+    background-color: rgb(255, 249, 222);
+    border: 2px solid #c4c4c4;
     top: 50%;
     left: 29%;
     position: absolute;
@@ -103,7 +110,8 @@ export const FirstColumnTableTwo = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: #69A1D2;
+    background-color: rgb(255, 249, 222);
+    border: 2px solid #c4c4c4;
     top: 60%;
     left: 29%;
     position: absolute;
@@ -117,7 +125,8 @@ export const FirstColumnTableThree = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: #69A1D2;
+    background-color: rgb(255, 249, 222);
+    border: 2px solid #c4c4c4;
     top: 70%;
     left: 29%;
     position: absolute;
@@ -132,7 +141,8 @@ export const SecondColumnTableOne = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: #69A1D2;
+    background-color: rgb(255, 249, 222);
+    border: 2px solid #c4c4c4;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -146,7 +156,8 @@ export const SecondColumnTableTwo = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: #69A1D2;
+    background-color: rgb(255, 249, 222);
+    border: 2px solid #c4c4c4;
     top: 60%;
     left: 50%;
     position: absolute;
@@ -160,7 +171,8 @@ export const SecondColumnTableThree = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: #69A1D2;
+    background-color: rgb(255, 249, 222);
+    border: 2px solid #c4c4c4;
     top: 70%;
     left: 50%;
     position: absolute;
@@ -175,8 +187,9 @@ export const ThirdColumnTableOne = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: #69A1D2;
-    opacity: 60%;
+    background-color: rgb(255, 249, 222);
+    border: 2px solid #c4c4c4;
+    opacity: 80%;
     transition: 0.2s;
     top: 50%;
     left: 71%;
@@ -198,8 +211,9 @@ export const ThirdColumnTableTwo = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: #69A1D2;
-    opacity: 60%;
+    background-color: rgb(255, 249, 222);
+    border: 2px solid #c4c4c4;
+    opacity: 80%;
     top: 60%;
     left: 71%;
     position: absolute;
@@ -220,8 +234,9 @@ export const ThirdColumnTableThree = styled.div`
     height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 20px 20px 20px 20px;
-    background-color: #69A1D2;
-    opacity: 60%;
+    background-color: rgb(255, 249, 222);
+    border: 2px solid #c4c4c4;
+    opacity: 80%;
     top: 70%;
     left: 71%;
     position: absolute;
@@ -239,24 +254,33 @@ export const ThirdColumnTableThree = styled.div`
 
 export const NormalText = styled.h3`
     margin-top: -15px;
-    color: #FFF;
+    color: #2b2b2b;
     font-size: 16px;
     font-weight: normal;
 `;
 
 /* ICONS */
 export const ExitIcon = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: var(--primary-color);
     font-size: ${props => `${props.fontSize}px`};
-    margin-left: 93%;
-    margin-top: -150px;
-    padding: 10px 20px;
-    width: -10%;
-    /* color: white; */
+    color: #fff;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
         cursor: pointer;
         color: rgba(214, 69, 65, 1);
         transition: 0.5s all ease-out;
     }
-    
 `;
