@@ -1,6 +1,29 @@
 import React from 'react';
-import { Container, MainTitle, ProfessorFirstTable, TitleText, TextTableOne, ProfessorSecondTable, TextTableTwo, MateriaFirstTable, MateriaSecondTable, NivelFirstTable, NivelSecondTable, ConteudoFirstTable, ConteudoSecondTable, MetodologiaFirstTable, MetodologiaSecondTable, CronogramaFirstTable, CronogramaSecondTable, AvaliacaoFirstTable, AvaliacaoSecondTable, ReferenciaFirstTable, ReferenciaSecondTable, ExitIcon } from './styles';
 import { IoIosExit } from 'react-icons/io';
+import {
+    Container,
+    MainTitle,
+    ProfessorFirstTable,
+    TitleText,
+    TextTableOne,
+    ProfessorSecondTable,
+    TextTableTwo,
+    MateriaFirstTable,
+    MateriaSecondTable,
+    NivelFirstTable,
+    NivelSecondTable,
+    ConteudoFirstTable,
+    ConteudoSecondTable,
+    MetodologiaFirstTable,
+    MetodologiaSecondTable,
+    CronogramaFirstTable,
+    CronogramaSecondTable,
+    AvaliacaoFirstTable,
+    AvaliacaoSecondTable,
+    ReferenciaFirstTable,
+    ReferenciaSecondTable,
+    ExitIcon,
+} from './styles';
 
 function planejamentoPage({ history }) {
     return (
@@ -38,7 +61,9 @@ function planejamentoPage({ history }) {
             </ConteudoFirstTable>
 
             <ConteudoSecondTable>
-                <TextTableTwo>Connectors, Pronouns, Verbs e If Clauses</TextTableTwo>
+                <TextTableTwo>
+                    Connectors, Pronouns, Verbs e If Clauses
+                </TextTableTwo>
             </ConteudoSecondTable>
 
             <MetodologiaFirstTable>
@@ -54,7 +79,9 @@ function planejamentoPage({ history }) {
             </CronogramaFirstTable>
 
             <CronogramaSecondTable>
-                <TextTableTwo>Seg: Reading, Qui: Listening e Speaking</TextTableTwo>
+                <TextTableTwo>
+                    Seg: Reading, Qui: Listening e Speaking
+                </TextTableTwo>
             </CronogramaSecondTable>
 
             <AvaliacaoFirstTable>
@@ -62,7 +89,9 @@ function planejamentoPage({ history }) {
             </AvaliacaoFirstTable>
 
             <AvaliacaoSecondTable>
-                <TextTableTwo>Unid 1: 15 de Março, Unid 2: 17 de Junho</TextTableTwo>
+                <TextTableTwo>
+                    Unid 1: 15 de Março, Unid 2: 17 de Junho
+                </TextTableTwo>
             </AvaliacaoSecondTable>
 
             <ReferenciaFirstTable>
@@ -74,9 +103,8 @@ function planejamentoPage({ history }) {
             </ReferenciaSecondTable>
 
             <ExitIcon fontSize={50}>
-                <IoIosExit onClick={() => history.push('/home')} ></IoIosExit>
+                <IoIosExit onClick={() => history.push('/home')} />
             </ExitIcon>
-
         </Container>
     );
 }

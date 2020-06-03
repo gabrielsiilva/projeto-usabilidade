@@ -1,15 +1,28 @@
 import styled from 'styled-components';
 
-export const Container = styled.body`
-    font-family: 'Roboto', sans-serif;
-    margin: 15px;
+export const Container = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 `;
 
 export const MainTitle = styled.div`
     margin-bottom: 50px;
+    width: 90%;
     margin-top: 0px;
     padding: 10px;
-    color: #2b2b2b;
+    color: #fff;
+    text-align: center;
+`;
+
+export const TitleText = styled.h1`
+    margin-top: 4%;
+    border: 2px outset transparent;
+    height: 70px;
+    border-left: #fff;
+    border-right: #fff;
+    border-bottom-color: #fff;
 `;
 
 export const ProfessorFirstTable = styled.div`
@@ -26,7 +39,7 @@ export const ProfessorFirstTable = styled.div`
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: large;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const ProfessorSecondTable = styled.div`
@@ -34,7 +47,7 @@ export const ProfessorSecondTable = styled.div`
     height: 20px;
     border: 2px solid #c4c4c4;
     border-radius: 0 20px 20px 0;
-    background-color: rgb(255, 249, 222);
+    background-color: #fff;
     top: 30%;
     left: 224mm;
     position: absolute;
@@ -42,16 +55,7 @@ export const ProfessorSecondTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: 22px;
-    color: #FFF;
-`;
-
-export const TitleText = styled.h1`
-    margin-top: 4%;
-    border: 2px outset transparent;
-    height: 70px;
-    border-left: #FFF;
-    border-right: #FFF;
-    border-bottom-color: #C4C4C4;
+    color: #fff;
 `;
 
 export const TextTableOne = styled.h2`
@@ -79,7 +83,7 @@ export const MateriaFirstTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: large;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const MateriaSecondTable = styled.div`
@@ -95,7 +99,7 @@ export const MateriaSecondTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: 22px;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const NivelFirstTable = styled.div`
@@ -111,7 +115,7 @@ export const NivelFirstTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: large;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const NivelSecondTable = styled.div`
@@ -127,7 +131,7 @@ export const NivelSecondTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: 22px;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const ConteudoFirstTable = styled.div`
@@ -143,7 +147,7 @@ export const ConteudoFirstTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: large;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const ConteudoSecondTable = styled.div`
@@ -159,7 +163,7 @@ export const ConteudoSecondTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: 22px;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const MetodologiaFirstTable = styled.div`
@@ -175,7 +179,7 @@ export const MetodologiaFirstTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: large;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const MetodologiaSecondTable = styled.div`
@@ -191,7 +195,7 @@ export const MetodologiaSecondTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: 22px;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const CronogramaFirstTable = styled.div`
@@ -207,7 +211,7 @@ export const CronogramaFirstTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: large;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const CronogramaSecondTable = styled.div`
@@ -223,7 +227,7 @@ export const CronogramaSecondTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: 22px;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const AvaliacaoFirstTable = styled.div`
@@ -239,7 +243,7 @@ export const AvaliacaoFirstTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: large;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const AvaliacaoSecondTable = styled.div`
@@ -255,7 +259,7 @@ export const AvaliacaoSecondTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: 22px;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const ReferenciaFirstTable = styled.div`
@@ -271,7 +275,7 @@ export const ReferenciaFirstTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: large;
-    color: #FFF;
+    color: #fff;
 `;
 
 export const ReferenciaSecondTable = styled.div`
@@ -287,7 +291,7 @@ export const ReferenciaSecondTable = styled.div`
     padding: 35px;
     text-align: center;
     font-size: 22px;
-    color: #FFF;
+    color: #fff;
 `;
 
 /* ICONS */
@@ -302,7 +306,7 @@ export const ExitIcon = styled.div`
     height: 60px;
     padding: 1rem;
     background: var(--primary-color);
-    font-size: ${props => `${props.fontSize}px`};
+    font-size: ${(props) => `${props.fontSize}px`};
     color: #fff;
     opacity: 90%;
     display: flex;

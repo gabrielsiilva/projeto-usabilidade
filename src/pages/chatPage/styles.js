@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.body`
-  font-family: 'Roboto', sans-serif; 
-  margin: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
 `;
 
 export const MainTitle = styled.div`
@@ -46,25 +46,25 @@ export const ChatBox = styled.div`
 
 /* CHAT Message Container */
 export const FirstLightContainerChat = styled.div`
-  max-width: 1160px;
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 12px 0;
+    max-width: 1160px;
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 12px 0;
 `;
 
 export const SecondLightContainerChat = styled.div`
-  max-width: 1160px;
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 12px 0;
+    max-width: 1160px;
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 12px 0;
 `;
 
 export const BoldText = styled.b`
-font-weight: bold;
+    font-weight: bold;
 `;
 
 export const FirstDarkContainerChat = styled.div`
@@ -127,19 +127,19 @@ export const RightContainer = styled.div`
 `;
 
 export const UserStatus = styled.li`
-    color: rgba(111,199, 139); 
+    color: rgba(111, 199, 139);
 `;
 
 export const TypeBox = styled.div`
     width: 1100px;
     height: 100px;
-    border: 2px solid #69A1D2;
+    border: 2px solid #69a1d2;
     border-radius: 20px 20px 20px 20px;
     background-color: #f5f5f5;
     top: 88%;
     left: 50%;
     position: absolute;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 `;
 
 export const InputText = styled.input`
@@ -150,7 +150,7 @@ export const InputText = styled.input`
     bottom: 3px;
     left: 46.1%;
     position: absolute;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     padding: 45px;
     font-size: 1em;
 `;
@@ -169,7 +169,7 @@ export const ExitButton = styled.button`
     height: 60px;
     padding: 1rem;
     background: rgba(214, 69, 65, 1);
-    font-size: ${props => `${props.fontSize}px`};
+    font-size: ${(props) => `${props.fontSize}px`};
     color: #fff;
     display: flex;
     align-items: center;
@@ -193,14 +193,14 @@ export const SendButton = styled.button`
     cursor: pointer;
     height: 100px;
     padding: 1rem;
-    background: rgba(111,199, 139);
-    font-size: ${props => `${props.fontSize}px`};
+    background: rgba(111, 199, 139);
+    font-size: ${(props) => `${props.fontSize}px`};
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0px 20px 20px 0px;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 
     &:hover {
         background-color: rgb(135, 211, 124);

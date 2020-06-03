@@ -1,77 +1,97 @@
 import React from 'react';
-import { Container, MainTitle, TextTitle, MainTable, TextSubtitle, DescricaoTable, PrazoTable, StatusTable, FirstColumnTableOne, FirstColumnTableTwo, FirstColumnTableThree, SecondColumnTableOne, SecondColumnTableTwo, SecondColumnTableThree, ThirdColumnTableOne, ThirdColumnTableTwo, ThirdColumnTableThree, NormalText, ExitIcon } from './styles';
 import { IoIosExit } from 'react-icons/io';
+import {
+    Container,
+    MainTitle,
+    TextTitle,
+    MainTable,
+    TextSubtitle,
+    DescricaoTable,
+    PrazoTable,
+    StatusTable,
+    FirstColumnTableOne,
+    FirstColumnTableTwo,
+    FirstColumnTableThree,
+    SecondColumnTableOne,
+    SecondColumnTableTwo,
+    SecondColumnTableThree,
+    ThirdColumnTableOne,
+    ThirdColumnTableTwo,
+    ThirdColumnTableThree,
+    NormalText,
+    ExitIcon,
+} from './styles';
 
-// import { Container } from './styles';
-
-function entregaAtividadePage({history}) {
+function entregaAtividadePage({ history }) {
     return (
-    <Container>
-        <MainTitle>
-            <TextTitle>CRIAÇÃO E ENTREGA DE ATIVIDADES</TextTitle>
-        </MainTitle>
+        <Container>
+            <MainTitle>
+                <TextTitle>CRIAÇÃO E ENTREGA DE ATIVIDADES</TextTitle>
+            </MainTitle>
 
-        <MainTable>
-            <TextSubtitle>Fevereiro - Atividade 03</TextSubtitle>
-        </MainTable>
+            <MainTable>
+                <TextSubtitle>Fevereiro - Atividade 03</TextSubtitle>
+            </MainTable>
 
-        <DescricaoTable>
-            <TextSubtitle>Descrição</TextSubtitle>
-        </DescricaoTable>
+            <DescricaoTable>
+                <TextSubtitle>Descrição</TextSubtitle>
+            </DescricaoTable>
 
-        <PrazoTable>
-            <TextSubtitle>Prazo</TextSubtitle>
-        </PrazoTable>
+            <PrazoTable>
+                <TextSubtitle>Prazo</TextSubtitle>
+            </PrazoTable>
 
-        <StatusTable>
-            <TextSubtitle>Status</TextSubtitle>
-        </StatusTable>
-        
-        {/* Coluna da Descrição */}
-        <FirstColumnTableOne>
-            <NormalText>Resuma o texto lido em sala em inglês</NormalText>
-        </FirstColumnTableOne>
+            <StatusTable>
+                <TextSubtitle>Status</TextSubtitle>
+            </StatusTable>
 
-        <FirstColumnTableTwo>
-            <NormalText>Identifique os Phrasal Verbs contidos no texto</NormalText>
-        </FirstColumnTableTwo>
+            {/* Coluna da Descrição */}
+            <FirstColumnTableOne>
+                <NormalText>Resuma o texto lido em sala em inglês</NormalText>
+            </FirstColumnTableOne>
 
-        <FirstColumnTableThree>
-            <NormalText>Aplique o uso do Past Perfect Continuous no seu dia-a-dia</NormalText>
-        </FirstColumnTableThree>
+            <FirstColumnTableTwo>
+                <NormalText>
+                    Identifique os Phrasal Verbs contidos no texto
+                </NormalText>
+            </FirstColumnTableTwo>
 
-        {/* Coluna do Prazo */}
-        <SecondColumnTableOne>
-            <NormalText>10/02/2020</NormalText>
-        </SecondColumnTableOne>
+            <FirstColumnTableThree>
+                <NormalText>
+                    Aplique o uso do Past Perfect Continuous no seu dia-a-dia
+                </NormalText>
+            </FirstColumnTableThree>
 
-        <SecondColumnTableTwo>
-            <NormalText>11/02/2020</NormalText>
-        </SecondColumnTableTwo>
+            {/* Coluna do Prazo */}
+            <SecondColumnTableOne>
+                <NormalText>10/02/2020</NormalText>
+            </SecondColumnTableOne>
 
-        <SecondColumnTableThree>
-            <NormalText>15/02/2020</NormalText>
-        </SecondColumnTableThree>
+            <SecondColumnTableTwo>
+                <NormalText>11/02/2020</NormalText>
+            </SecondColumnTableTwo>
 
-        {/* Coluna do Status */}
-        <ThirdColumnTableOne>
-            <NormalText>CONCLUIDA</NormalText>
-        </ThirdColumnTableOne>
+            <SecondColumnTableThree>
+                <NormalText>15/02/2020</NormalText>
+            </SecondColumnTableThree>
 
-        <ThirdColumnTableTwo>
-            <NormalText>EM ANDAMENTO</NormalText>
-        </ThirdColumnTableTwo>
+            {/* Coluna do Status */}
+            <ThirdColumnTableOne>
+                <NormalText>CONCLUIDA</NormalText>
+            </ThirdColumnTableOne>
 
-        <ThirdColumnTableThree>
-            <NormalText>NÃO INICIADA</NormalText>
-        </ThirdColumnTableThree>
-        
-        <ExitIcon fontSize={50}>
-        <IoIosExit onClick={() => history.push('/home')} ></IoIosExit>
-        </ExitIcon>
-        
-        
-    </Container>
+            <ThirdColumnTableTwo>
+                <NormalText>EM ANDAMENTO</NormalText>
+            </ThirdColumnTableTwo>
+
+            <ThirdColumnTableThree>
+                <NormalText>NÃO INICIADA</NormalText>
+            </ThirdColumnTableThree>
+
+            <ExitIcon fontSize={50}>
+                <IoIosExit onClick={() => history.push('/home')} />
+            </ExitIcon>
+        </Container>
     );
 }
 

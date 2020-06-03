@@ -1,24 +1,17 @@
 import React from 'react';
-import { Container, MainTitle, TitleText, ExitIcon } from './styles';
 import { IoIosExit } from 'react-icons/io';
+import { Container, MainTitle, TitleText, ExitIcon } from './styles';
 
-// import { Container } from './styles';
-
-function listaAtividadesPage({history}) {
+function listaAtividadesPage({ history }) {
     return (
-        <Container >
+        <Container>
             <MainTitle>
                 <TitleText>Lista de Atividades</TitleText>
             </MainTitle>
 
-
-
             <ExitIcon fontSize={50}>
-                <IoIosExit onClick={() => history.push('/home')} ></IoIosExit>
+                <IoIosExit onClick={() => history.push('/home')} />
             </ExitIcon>
-
-
-            
         </Container>
     );
 }
