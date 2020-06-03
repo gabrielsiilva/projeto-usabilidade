@@ -1,5 +1,5 @@
 import React from 'react';
-import { IoIosExit, IoIosAddCircleOutline } from 'react-icons/io';
+import { IoIosAddCircleOutline } from 'react-icons/io';
 import {
     Container,
     CardDead,
@@ -9,22 +9,22 @@ import {
     TextTitleCad,
     MainTitle,
     TitleText,
-    ExitIcon,
 } from './styles';
 
-function materialDidaticoPage({ history }) {
+import Sidemenu from '../../components/sidemenu';
+
+function materialDidaticoPage() {
     return (
         <Container>
+            <Sidemenu />
+
             <MainTitle>
                 <TitleText>Material Didático</TitleText>
             </MainTitle>
-            <ExitIcon fontSize={50}>
-                <IoIosExit onClick={() => history.push('/home')} />
-            </ExitIcon>
 
             <CardDead>
                 <CardTitle>
-                    <TextTitleCad>Material Didatico</TextTitleCad>
+                    <TextTitleCad>Material Didático</TextTitleCad>
                 </CardTitle>
                 <TextInput type="text" />
                 <CardButton>
@@ -35,6 +35,7 @@ function materialDidaticoPage({ history }) {
                             fontSize: '50px',
                             borderRadius: '50%',
                             marginLeft: '50%',
+                            marginTop: '10',
                         }}
                     />
                 </CardButton>
@@ -42,7 +43,7 @@ function materialDidaticoPage({ history }) {
 
             <CardDead>
                 <CardTitle>
-                    <TextTitleCad>Material Didatico Digital</TextTitleCad>
+                    <TextTitleCad>Material Didático Digital</TextTitleCad>
                 </CardTitle>
                 <TextInput />
                 <CardButton>
@@ -53,6 +54,7 @@ function materialDidaticoPage({ history }) {
                             fontSize: '50px',
                             borderRadius: '50%',
                             marginLeft: '50%',
+                            marginTop: '10',
                         }}
                     />
                 </CardButton>

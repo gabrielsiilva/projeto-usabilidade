@@ -1,6 +1,5 @@
 import React from 'react';
 import { FiSend } from 'react-icons/fi';
-import { IoIosExit } from 'react-icons/io';
 import {
     Container,
     MainTitle,
@@ -17,15 +16,18 @@ import {
     Paragraph,
     RightContainer,
     UserStatus,
-    ExitButton,
     TypeBox,
     InputText,
     SendButton,
 } from './styles';
 
-function chatPage({ history }) {
+import Sidemenu from '../../components/sidemenu';
+
+function chatPage() {
     return (
         <Container>
+            <Sidemenu />
+
             <MainTitle>
                 <TitleText>CHAT</TitleText>
             </MainTitle>
@@ -82,11 +84,6 @@ function chatPage({ history }) {
                     </UserStatus>
                 </RightContainer>
             </ChatBox>
-
-            <ExitButton type="button" onClick={() => history.push('/Home')}>
-                {' '}
-                <IoIosExit font-size={30} />{' '}
-            </ExitButton>
 
             <TypeBox />
 

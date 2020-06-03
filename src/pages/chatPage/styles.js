@@ -1,23 +1,29 @@
 import styled from 'styled-components';
 
-export const Container = styled.body`
-    font-family: 'Roboto', sans-serif;
-    margin: 15px;
+export const Container = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
 `;
 
 export const MainTitle = styled.div`
-    margin: 10px;
+    margin-bottom: 50px;
+    width: 90%;
+    margin-top: 0px;
     padding: 10px;
-    color: #2b2b2b;
+    color: #fff;
+    text-align: center;
 `;
 
 export const TitleText = styled.h1`
-    margin-top: 80px;
+    margin-top: 4%;
     border: 2px outset transparent;
     height: 70px;
     border-left: #fff;
     border-right: #fff;
-    border-bottom-color: #c4c4c4;
+    border-bottom-color: #fff;
 `;
 
 export const ChatBackground = styled.div`

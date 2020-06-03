@@ -1,9 +1,8 @@
 import React from 'react';
-import { IoIosExit } from 'react-icons/io';
 import {
     Container,
     MainTitle,
-    TextTitle,
+    TitleText,
     MainTable,
     TextSubtitle,
     DescricaoTable,
@@ -19,14 +18,17 @@ import {
     ThirdColumnTableTwo,
     ThirdColumnTableThree,
     NormalText,
-    ExitIcon,
 } from './styles';
 
-function entregaAtividadePage({ history }) {
+import Sidemenu from '../../components/sidemenu';
+
+function entregaAtividadePage() {
     return (
         <Container>
+            <Sidemenu />
+
             <MainTitle>
-                <TextTitle>CRIAÇÃO E ENTREGA DE ATIVIDADES</TextTitle>
+                <TitleText>CRIAÇÃO E ENTREGA DE ATIVIDADES</TitleText>
             </MainTitle>
 
             <MainTable>
@@ -87,10 +89,6 @@ function entregaAtividadePage({ history }) {
             <ThirdColumnTableThree>
                 <NormalText>NÃO INICIADA</NormalText>
             </ThirdColumnTableThree>
-
-            <ExitIcon fontSize={50}>
-                <IoIosExit onClick={() => history.push('/home')} />
-            </ExitIcon>
         </Container>
     );
 }
