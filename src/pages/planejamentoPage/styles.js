@@ -6,7 +6,8 @@ export const Container = styled.body`
 `;
 
 export const MainTitle = styled.div`
-    margin: 10px;
+    margin-bottom: 50px;
+    margin-top: 0px;
     padding: 10px;
     color: #2b2b2b;
 `;
@@ -45,7 +46,7 @@ export const ProfessorSecondTable = styled.div`
 `;
 
 export const TitleText = styled.h1`
-    margin-top: 80px;
+    margin-top: 4%;
     border: 2px outset transparent;
     height: 70px;
     border-left: #FFF;

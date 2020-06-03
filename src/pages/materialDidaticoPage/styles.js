@@ -11,6 +11,38 @@ export const MainTitle = styled.div`
     color: #2b2b2b;
 `;
 
+export const CardDead = styled.div`
+    margin: 7%;
+    border-radius: 25px;
+    background-color: #fff;
+    border-style: solid;
+    padding: 0%;
+    border-color: #4585B9
+`;
+
+export const CardTitle = styled.div`
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #4585B9 !important;
+`;
+export const CardButton = styled.div`
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #4585B9 !important;
+`;
+export const Button = styled.button`
+  margin-left:50%;
+  padding: 1em;
+  border-radius: 50%;
+  border-style:none
+`;
+
+
+export const TextInput = styled.input`
+    margin: 7%;
+    border: 2px outset transparent;
+
+`;
 export const TitleText = styled.h1`
     margin-top: 80px;
     border: 2px outset transparent;
@@ -18,6 +50,10 @@ export const TitleText = styled.h1`
     border-left: #FFF;
     border-right: #FFF;
     border-bottom-color: #C4C4C4;
+`;
+export const TextTitleCad = styled.h1`
+    color:#fff;
+
 `;
 
 /* ICONS */
